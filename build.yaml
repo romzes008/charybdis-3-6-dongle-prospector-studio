@@ -22,21 +22,18 @@ include:
     shield: charybdis_dongle
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
+    artifact-name: dongle
   - board: xiao_ble//zmk
     shield: charybdis_dongle prospector_adapter
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
-  - board: xiao_ble//zmk
-    shield: charybdis_dongle
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
-
-  - board: xiao_ble//zmk
+    artifact-name: prospector
+ - board: nice_nano/nrf52840/zmk
     shield: settings_reset
-  - board: nice_nano/nrf52840/zmk
-    shield: settings_reset
-
+    artifact-name: reset
   - board: nice_nano/nrf52840/zmk
     shield: charybdis_left
+    artifact-name: left
   - board: nice_nano/nrf52840/zmk
     shield: charybdis_right
+    artifact-name: right
