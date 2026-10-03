@@ -55,3 +55,9 @@ include:
     snippet: zmk-usb-logging
     cmake-args: -DCONFIG_ZMK_LOG_LEVEL_DBG=y
     artifact-name: right-debug
+
+  - board: nice_nano/nrf52840/zmk
+    shield: charybdis_left
+    snippet: zmk-usb-logging
+    cmake-args: -DCONFIG_ZMK_LOG_LEVEL_DBG=y
+    artifact-name: left-debug
