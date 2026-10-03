@@ -53,7 +53,8 @@ include:
   - board: nice_nano/nrf52840/zmk
     shield: charybdis_right
     snippet: zmk-usb-logging
-    cmake-args: -DCONFIG_ZMK_LOG_LEVEL_DBG=y
+    # Preserve sensor startup logs until the USB serial port is opened.
+    cmake-args: -DCONFIG_ZMK_LOG_LEVEL_DBG=y -DCONFIG_USB_CDC_ACM_RINGBUF_SIZE=16384
     artifact-name: right-debug
 
   - board: nice_nano/nrf52840/zmk
