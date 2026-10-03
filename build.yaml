@@ -41,3 +41,17 @@ include:
   - board: nice_nano/nrf52840/zmk
     shield: charybdis_right
     artifact-name: right
+
+  # Diagnostic builds: USB serial logs, same matrix and BLE roles.
+  # Keep Studio RPC off these builds so the serial port carries only logs.
+  - board: nice_nano/nrf52840/zmk
+    shield: charybdis_dongle
+    snippet: zmk-usb-logging
+    cmake-args: -DCONFIG_ZMK_STUDIO=n -DCONFIG_ZMK_LOG_LEVEL_DBG=y
+    artifact-name: dongle-debug
+
+  - board: nice_nano/nrf52840/zmk
+    shield: charybdis_right
+    snippet: zmk-usb-logging
+    cmake-args: -DCONFIG_ZMK_LOG_LEVEL_DBG=y
+    artifact-name: right-debug
