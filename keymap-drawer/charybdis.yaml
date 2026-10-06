@@ -26,22 +26,22 @@ layers:
   - {t: ;, h: LGUI}
   - ''''
   - LSHFT
-  - Z
-  - {t: X, h: Ctl+ X}
-  - {t: C, h: Ctl+ C}
-  - V
-  - {t: B, h: Ctl+ V}
+  - {t: Gui+ Z, h: Z}
+  - {t: X, h: Gui+ X}
+  - {t: C, h: Gui+ C}
+  - {t: Gui+ V, h: V}
+  - B
   - N
   - M
   - ','
   - .
-  - /
   - ']'
+  - /
   - CAPSLOCK
   - Symbol
   - {t: RET, h: Mouse}
+  - BACK SPACE
   - {t: SPACE, h: Number}
-  - BSPC
   Mouse:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -79,9 +79,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&mkp MB1'
-  - '&mkp MB2'
-  - {t: '&mkp MB3', type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Symbol:
@@ -144,19 +144,19 @@ layers:
   - {t: '4', h: LALT}
   - {t: '5', h: LSHFT}
   - {t: '6', h: LCTRL}
-  - ''
+  - '0'
   - ''
   - {t: LEFT, h: RCTRL}
   - {t: DOWN, h: RSHFT}
   - {t: RIGHT, h: RALT}
-  - RGUI
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''
   - '1'
   - '2'
   - '3'
-  - Ctl+ -
+  - {t: ▽, type: trans}
   - Ctl+ =
   - HOME
   - {t: ▽, type: trans}
@@ -166,8 +166,8 @@ layers:
   - .
   - '0'
   - SPACE
+  - {t: ▽, type: trans}
   - {type: held}
-  - ''
   Function:
   - {type: held}
   - Ctl+Alt+ DEL
